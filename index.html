@@ -4,25 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-Tac-Toe</title>
+    <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1 id="heading">Tic-Tac-Toe</h1>
-    <div id="game">
-        <button id="button1"></button>
-        <button id="button2"></button>
-        <button id="button3"></button>
-        <button id="button4"></button>
-        <button id="button5"></button>
-        <button id="button6"></button>
-        <button id="button7"></button>
-        <button id="button8"></button>
-        <button id="button9"></button>
+    <div class="all">
+        <div class="msg-container hide">
+            <p id="msg">Winner</p>
+            <button id="new-btn">New Game</button>
+        </div>
+        <!-- <img id="img" src="https://www.shutterstock.com/image-vector/seamless-pattern-game-tic-tac-600w-709731865.jpg" alt="Game"> -->
+        <main>
+            <h1 id="heading">Tic-Tac-Toe</h1>
+            <p id="start">Let's start <button id="start-btn">Start -></button></p>
+            <p class="choice hide">Choose First Turn => <button id="X-choose">X</button><button id="O-choose">O</button></p>
+            <p class="turns hide">X turns</p>
+            <div class="container">
+                <div class="game">
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                </div>
+            </div>
+            <button id="reset-btn" type="reset">Reset Game</button>
+        </main>
     </div>
-<script src="back.js"></script>
-<script src="/jQuery/jquery-3.7.1.min.js"></script>
-<script src="jQuery.js"></script>
 </body>
+<script src="app.js"></script>
+
 </html>
