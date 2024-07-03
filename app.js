@@ -117,6 +117,7 @@ const oStarts=()=>
 const xStarts=()=>
 {
  choice.classList.add("hide");
+ turns.innerText="X turns";
  turns.classList.remove("hide");
  turnO = false;
  onXTurns();
